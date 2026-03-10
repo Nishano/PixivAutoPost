@@ -1,0 +1,12 @@
+{
+  "admins": [
+    123456789
+  ],
+  "profiles": {
+    "123456789": {
+      "username": "your_username",
+      "firstName": "Your",
+      "lastName": "Name"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+services:
+  pixiv-bot:
+    container_name: pixiv-autobot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pixiv-autobot:latest
+    restart: unless-stopped
+    init: true
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      TZ: Europe/Moscow
+    volumes:
+      - ./data:/app/data
+    tmpfs:
+      - /app/temp:rw,size=256m,uid=1000,gid=1000,mode=1775
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"

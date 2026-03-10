@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+data/*.json
+!data/*.example.json
+
+dist/
+node_modules/
+temp/
+bot.log
+npm-debug.log*
+*.tar.gz
