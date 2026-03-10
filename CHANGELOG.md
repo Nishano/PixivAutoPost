@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1] - 2026-03-10
+
+- added GitHub Actions CI workflow for build verification on `main` and pull requests;
+- added GitHub Actions release workflow for automatic GitHub Releases on `v*` tags;
+- automated release artifact packaging without local secrets or runtime data.
+
 ## [1.0.0] - 2026-03-10
 
 - initial open-source release of the Pixiv auto-posting Telegram bot;
