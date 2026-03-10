@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.2] - 2026-03-10
+
+- fixed GitHub release workflow packaging so the archive is created outside the repo tree;
+- release artifacts now publish from `/tmp` to avoid `tar` including the output archive in itself.
+
 ## [1.0.1] - 2026-03-10
 
 - added GitHub Actions CI workflow for build verification on `main` and pull requests;
